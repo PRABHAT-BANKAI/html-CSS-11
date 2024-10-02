@@ -1,0 +1,106 @@
+<!-- Use Of External Css
+google icon
+Font Awesome & SVG Icon 
+Favicon
+
+
+Background
+Color, Gradirents, Position, Size, Attachment, Repeat, Image, Background-Blend- Mode
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favicon</title>
+    <link
+      rel="icon"
+      href="./enable_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      .box1 {
+        height: 500px;
+        width: 500px;
+        background-color: aqua;
+        margin-top: 25px;
+      }
+
+      .box2 {
+        height: 200px;
+        width: 500px;
+        margin-top: 25px;
+        background: linear-gradient(to right, red, white, blue, green);
+        background: radial-gradient(red, yellow, green);
+        background: conic-gradient(yellow, red, green, blue, black);
+        background: radial-gradient(
+          circle,
+          rgba(34, 193, 195, 1) 0%,
+          rgba(13, 141, 38, 0.9837184873949579) 100%
+        );
+      }
+      .box3 {
+        background: url(./image.jpeg);
+        height: 300px;
+        width: 300px;
+        background-repeat: no-repeat;
+        /* background-repeat: repeat-y;
+        background-repeat: repeat-x; */
+        /* background-position: center; */
+        /* background-position:right; */
+        /* background-position:bottom; */
+        border: 1px solid black;
+        /* background-size: contain; */
+        /* background-size: cover; */
+        background-color: rgb(100, 237, 109);
+        background-attachment: scroll;
+        background-attachment: fixed;
+        background-blend-mode:overlay ;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>heading 1</h1>
+
+    <span class="material-symbols-outlined"> home </span>
+    <span class="material-symbols-outlined"> search </span>
+    <span class="material-symbols-outlined"> delete </span>
+    <span class="material-symbols-outlined"> arrow forward </span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="red"
+    >
+      <path
+        d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+      />
+    </svg>
+
+    <div class="box3"></div>
+
+    <i class="fa-solid fa-house-signal"></i>
+    <i class="fa-solid fa-igloo"></i>
+    <i class="fa-solid fa-house-fire fa-beat fa-2xl"></i>
+
+    <div class="box1">hellow</div>
+    <div class="box2">hellow</div>
+  </body>
+</html>
