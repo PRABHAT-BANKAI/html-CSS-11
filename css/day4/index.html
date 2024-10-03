@@ -1,0 +1,74 @@
+<!-- Box Modal
+Width, Height, Background-Color
+Content, Padding, Border, Margin
+
+Box-Sizing
+
+Display Property Block, Inline, Inline-Block, None
+Border, Border-Radius
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+        /* border: 25px solid green; shorthand technic width style color */
+        /* padding-top: 25px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+        padding-right: 25px; */
+        /*   padding: 25px 55px;25px top-bottom and 55pxleft-right  shorthand*/
+        /* padding: 25px 50px 75px 100px; top right bottom left  shorthand*/
+        padding: 10px; /* this shorthand effect all side */
+
+        border-width: 25px;
+        border-style: solid;
+        border-style: dashed;
+        border-style: dotted;
+        border-style: solid;
+        border-color: blue;
+        margin: 15px;
+        /* margin: auto; */
+        box-sizing: border-box;
+        /* border-radius: 50%; */
+        /* border-radius: 25px; */
+        border-radius: 22% 78% 81% 19% / 39% 64% 36% 61%;
+      }
+      .heading {
+        /* display: none; */
+        /* display :inline */
+        /* visibility: hidden; */
+      }
+      span {
+        background-color: yellow;
+        /* display :block */
+        padding: 25px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Box 1</div>
+    <p
+      class="heading"
+      style="height: 100px; width: 100px; background-color: aqua"
+    >
+      heading1
+    </p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non
+    laudantium voluptates beatae earum porro explicabo vero debitis delectus
+    voluptatum. <span>INLINE</span> non id exercitationem officia, commodi
+    reprehenderit sapiente aperiam corrupti.
+  </body>
+</html>
