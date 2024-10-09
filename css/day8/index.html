@@ -1,0 +1,80 @@
+<!-- Introduction Of CSS3
+Browser Support : Firefox (Moz), Chrome, Safari, Opera (Webkit)
+ transform Scale, Rotate, Skew, Translate -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 1px solid green;
+        background-color: rgb(116, 240, 116);
+        /* transform: scaleY(4) */
+        /* transform: rotateY(180deg); */
+        /* transform: skew(90deg); */
+        transition: 10s;
+        /* translate: 20px 40px; */
+        animation-name: magicbox;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+      }
+
+      .box {
+        /* transform: scale(4); */
+        /* transform: rotateY(360deg); */
+        /* transform: skew(60deg); */
+        /* margin-left: 200px; */
+        border-radius: 50%;
+
+        /* transform: rotate(3200deg); */
+      }
+
+      @keyframes magicbox {
+        /* from {
+          margin: 0;
+        }
+        to {
+          margin-left: 300px;
+          transform: rotate(1200deg);
+         
+        } */
+
+        0%{
+          margin: 0;
+        }
+        20%{
+          transform: rotate(360deg);
+
+        }
+        60%{
+          background-color: blueviolet;
+        }
+        100%{
+          margin-left: 200px;
+          background-color: coral;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">box1</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
+      libero nemo architecto suscipit magni aliquam aspernatur eligendi,
+      excepturi adipisci ea ratione beatae deleniti error repellat labore, amet
+      corrupti quis qui!
+    </p>
+  </body>
+</html>
