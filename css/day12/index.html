@@ -1,0 +1,88 @@
+<!-- Display Flex (Parent Property)Display: Flex
+
+FlexDirection (Row, Row Reverse, Column, Column Reverse)
+
+Flex Wrap (Nowrap, Wrap, Wrap Reverse)
+
+Flex Flow (Flex Direction Flex Wrap) -->
+
+<!-- Display Flex (Parent Property)
+Justify-Content (Flex-Start, Flex-End, Center, Space-Between, Space-Around, Space-Evenly)
+Align-Items (Stretch, Center, Flex-Start, Flex-End, Baseline)
+Align-Content (Stretch, Center, Flex-Start, Flex-End, Space-Between, Space-Around, Space-Evenly) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .main-container {
+        width: 100%;
+        /* width: 500px; */
+        height: 500px;
+        background-color: yellow;
+        display: flex;
+        /* justify-content: flex-end; main axis (x-axis) */
+        /* justify-content: center; */
+        /* justify-content: flex-start; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* flex-wrap: wrap; */
+        /* justify-content: space-evenly; */
+        /* align items cross axis (y-axis) */
+        /* align-items: center;
+        align-items: flex-start;
+        align-items: flex-end; */
+        /* align-items: stretch; */
+        /* flex-direction: column; */
+        /* align-items: baseline; */
+        flex-wrap: wrap;
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-content: center; */
+        /* align-content: space-around; */
+        /* align-content: space-evenly; */
+        /* align-content: space-between; */
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+      }
+      .red {
+        background-color: red;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .green {
+        background-color: green;
+      }
+      .purple {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="box red">1</div>
+      <div class="box blue">2</div>
+      <div class="box green">3</div>
+      <div class="box purple">4</div>
+      <div class="box red">1</div>
+      <div class="box blue">2</div>
+      <div class="box green">3</div>
+      <div class="box purple">4</div>
+      <div class="box red">1</div>
+      <div class="box blue">2</div>
+      <div class="box green">3</div>
+      <div class="box purple">4</div>
+    </div>
+  </body>
+</html>
